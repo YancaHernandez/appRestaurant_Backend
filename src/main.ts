@@ -8,6 +8,6 @@ async function bootstrap() {
   app.useGlobalFilters(new HttExceptionFilter());
   app.enableCors();
   app.useGlobalPipes(new ValidationPipe());
-  await app.listen(process.env.PORT || 8080);
+  await app.listen(process.env.PORT || 4200);
 }
 bootstrap();
